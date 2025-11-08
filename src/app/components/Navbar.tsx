@@ -2,10 +2,17 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function Navbar({ scrollY, isLoaded }) {
+// 🛑 PASO 1: Define la interfaz de props
+interface NavbarProps {
+    scrollY: number; // scrollY es un número (el valor del desplazamiento)
+    isLoaded: boolean; // isLoaded es un booleano
+}
+
+// 🛑 PASO 2: Aplica la interfaz a la función del componente
+export default function Navbar({ scrollY, isLoaded }: NavbarProps) {
   const navItems = ['Inicio', 'Servicios', 'Proyectos', 'Contacto'];
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const section = document.getElementById(id.toLowerCase());
     section?.scrollIntoView({ behavior: 'smooth' });
   };

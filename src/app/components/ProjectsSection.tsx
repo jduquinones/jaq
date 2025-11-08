@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Easing, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Zap, ArrowRight, LucideIcon } from "lucide-react";
 
@@ -72,7 +72,7 @@ const containerVariants = {
 
 const titleVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as Easing } },
 };
 
 const cardVariants = {
@@ -83,7 +83,7 @@ const cardVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.7, ease: "easeOut" as Easing },
   },
 };
 

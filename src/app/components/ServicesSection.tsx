@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Easing, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { LucideIcon, Building2, Home, Ruler, ArrowRight } from "lucide-react";
 
@@ -30,7 +30,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.7, ease: "easeOut" as Easing },
   },
 };
 

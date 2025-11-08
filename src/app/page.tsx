@@ -32,7 +32,7 @@ export default function JAQWebsite() {
 
         // 💡 LÓGICA DE MANEJO DE SCROLL/MOUSE
         const handleScroll = () => setScrollY(window.scrollY);
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             setMousePos({ x: e.clientX, y: e.clientY });
         };
 

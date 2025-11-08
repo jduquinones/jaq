@@ -2,7 +2,7 @@
 "use client"; // 🛑 NECESARIO para usar Framer Motion y Hooks
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Easing, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 // 🛑 Importamos los íconos de Lucide que se usarán
 import { LucideIcon, Building2, Award, Shield, Sparkles } from 'lucide-react'; 
@@ -35,7 +35,7 @@ const statVariants = {
             // Utilizamos el índice para crear un efecto de aparición escalonado
             delay: custom * 0.15, 
             duration: 0.6,
-            ease: "easeOut",
+            ease: "easeOut" as Easing,
         },
     }),
 };
