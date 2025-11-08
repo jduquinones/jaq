@@ -94,7 +94,7 @@ export default function ProjectsSection() {
   return (
     <motion.section
       id="proyectos"
-      className="relative  md:pt-18 bg-gradient-to-b from-black via-green-950/20 to-black overflow-hidden"
+      className="relative pt-18 md:pt-18 bg-gradient-to-b from-black via-green-950/20 to-black overflow-hidden"
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
