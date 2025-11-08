@@ -94,7 +94,7 @@ export default function ProjectsSection() {
   return (
     <motion.section
       id="proyectos"
-      className="relative py-14 md:py-32 bg-gradient-to-b from-black via-green-950/20 to-black overflow-hidden"
+      className="relative  md:pt-18 bg-gradient-to-b from-black via-green-950/20 to-black overflow-hidden"
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -103,7 +103,7 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Título */}
         <motion.div variants={titleVariants} className="text-center mb-16 md:mb-20">
-          <h2 className="text-5xl md:text-7xl font-black mb-4 leading-tight">
+          <h2 className="text-3xl md:text-6xl font-black mb-4 leading-tight">
             Proyectos{" "}
             <span className="bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent">
               Icónicos

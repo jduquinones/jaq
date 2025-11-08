@@ -77,7 +77,7 @@ export default function ServicesSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Encabezado */}
         <motion.div variants={itemVariants} className="text-center mb-16 md:mb-20">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
+          <h2 className="text-3xl md:text-6xl font-extrabold mb-4">
             Servicios de{" "}
             <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
               Elite

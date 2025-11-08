@@ -67,7 +67,7 @@ export default function StatsSection() {
             className="relative bg-gradient-to-b from-black to-green-950/20" 
             ref={ref}
         >
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-6xl mx-auto px-6">
                 <div className="grid md:grid-cols-4 gap-8">
                     {statsData.map((stat, idx) => (
                         // 4. Usamos motion.div en lugar de un div normal y estilos manuales
@@ -88,7 +88,7 @@ export default function StatsSection() {
                                 {/* 🛑 Uso del Wrapper Component para el ícono */}
                                 <IconWrapper Icon={stat.icon} className="w-10 h-10 text-green-400 mb-4" />
                                 
-                                <div className="text-5xl font-black mb-2 bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
+                                <div className="text-3xl md:text-5xl font-black mb-2 bg-gradient-to-r from-white to-green-400 bg-clip-text text-transparent">
                                     {stat.number}
                                 </div>
                                 <div className="text-gray-400 font-medium">{stat.label}</div>

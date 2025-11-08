@@ -84,7 +84,7 @@ export default function CTASection() {
           {/* Título principal */}
           <motion.h2
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-black mb-6 leading-tight"
+            className="text-3xl md:text-6xl font-black mb-6 leading-tight"
           >
             Construyamos algo{" "}
             <span className="bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent">
